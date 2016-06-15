@@ -1,0 +1,43 @@
+#+Title: Resumo das aulas
+
+* Aula 01
+
+- Destaquei a importância de implementar os algoritmos apresentados
+  como exercício.
+
+- Falamos sobre a estrutura do curso, material de apoio e
+  avaliações. Iremos tentar avaliações por trabalhos e projetos.
+
+- Apresentei as motivações para estudarmos algorítmos e estruturas de
+  dados.
+
+- Falamos sobre recursão e o exemplo de Fibonacci.
+
+#+BEGIN_SRC lisp
+(defun fib1 (n)
+  (cond 
+    ((equal n 0) 0)
+    ((equal n 1) 1)
+    (t (+ (fib1 (- n 1))
+	  (fib1 (- n 2))))))
+
+(defun fib2 (n)
+    (labels ((calc-fib (n a b)
+               (if (= n 0)
+                   a
+                   (calc-fib (- n 1) b (+ a b)))))
+      (calc-fib n 0 1)))
+#+END_SRC
+
+- Dei alguns exemplos da relação entre as estrututas de dados e a
+  complexidade de algorítmos usando operações básicas sobre [[https://en.wikipedia.org/wiki/Linked_list][listas
+  encadeadas]] e [[https://en.wikipedia.org/wiki/Array_data_structure][arrays]].
+
+* Aula 02
+
+- /Merge Sort/
+- Revisão Big O e /asymtotic analysis/
+- Divisão e Conquista
+  - Master Theorem
+  - Merge sort funcional
+  - Mediana

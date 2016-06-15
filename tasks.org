@@ -1,0 +1,9 @@
+#+Title: Tarefas
+
+* Aula 01
+
+- Exercícios 0.1, 0.2, 0.3
+
+* Aula 02
+
+- Exercícios: 2.2
